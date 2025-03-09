@@ -4,25 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WDD 131: Dynamic Web Fundamentals - Happiness N. Ncube</title>
-    <meta name="descruption" content="WDD 131 - Happiness Nonkululeko Ncube. This is my home page for Dynamic Web Fundamentals.">
+    <meta name="description" content="WDD 131 - Happiness Nonkululeko Ncube. This is my home page for Dynamic Web Fundamentals.">
     <meta name="author" content="Happiness">
-    <link rel="stylesheet" href="styles.css/normalize.css">
-    <link rel="stylesheet" href="styles.css/base.css">
-    <script src="getdates.js" defer></script>
+    <link rel="stylesheet" href="styles/base.css">
 </head>
 <body>
-    <h1>WDD 131:Dynamic Web Fundamentals - Happiness N. Durban</h1>
+    <header>
+    <p> 131:Dynamic Web Fundamentals - Happiness N. Durban</p>
     <nav>
         <ul>
-            <li><a href="https:www.linkedin.com">linkedIn</a></li>
+            <li><a href="https://www.linkedin.com">linkedIn</a></li>
         </ul>
         <ul>
             <li>
-                <a href="htps:www.byupw.instructure.com/">Canvas</a>
+                <a href="https:www//.byupw.instructure.com/">Canvas</a>
         </ul>
         <ul>
             <li>
-                <a href="https:www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/3?lang=eng&id=p7#p7">Favorite Scripture</a>
+                <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/3?lang=eng&id=p7#p7">Favorite Scripture</a>
             </li>
         </ul>
         <ul>
@@ -31,9 +30,10 @@
             </li>
         </ul>
     </nav>
+    </header>
     <main>
         <section class="card1">
-            <h2>About Me</h2>
+            <h1>About Me</h1>
             <div class="content">
                 <img src="images/image1.jpg" alt="My Image">
                 <p>
@@ -51,7 +51,8 @@
                     races gained their liberaion. South africa is located in the southern tip of Africa
                     bordering Namiba, Botswana, Zimbabwe, Mozambique, and Swaziland. it population is approximately 
                     60 million people.
-                </p><p>
+                </p>
+                <p>
                     <figure>
                         <img src="images/south-african-flag.jpg" alt="South African Flag">
                         <figcaption>South African Flag</figcaption>
@@ -61,7 +62,7 @@
         </section>
         <section class="card2">
             <h2>Web  Development Resources</h2>
-            <nav1>
+            <nav class="nav1">
                 <ul>
                     <li><a href="https://dev.to/" target="_blank">Dev.to  community</a></li>
                 </ul>
@@ -90,12 +91,13 @@
                         <a href="https:www.picsum.photos/97/100" target="_blank">Image Place Holder</a>
                     </li>
                 </ul>
-            </nav1>
+            </nav>
         </section>
     </main>
     <footer>
         <p>&copy; | 2025 | <span id="CurrentYear"></span>Happiness | South Africa</p>
-        <p id="last Modified"></p>
+        <p id="lastModified"></p>
     </footer>
+    <script src="scripts/getdates.js" defer></script>
 </body>
 </html>
