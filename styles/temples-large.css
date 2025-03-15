@@ -1,0 +1,22 @@
+@media (min-width: 768px) {
+    #menu {
+        display: flex;
+        position: static;
+        flex-direction: row;
+        width: auto;
+        box-shadow: none;
+    }
+
+    #menu-toggle {
+        display: none;
+    }
+
+    #menu ul {
+        display: flex;
+        gap: 15px;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

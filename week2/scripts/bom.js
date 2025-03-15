@@ -1,7 +1,9 @@
+console.log('hello')
+
 // Declare variables that hold references to the input, button, and list elements
 const input = document.querySelector('#favchap');
 const button = document.querySelector('button');
-const list = document.querySelector('ul'); // or document.querySelector('#list')
+const list = document.querySelector('ul#list'); // or document.querySelector('#list')
 
 // Add an event listener to the Add Chapter button
 button.addEventListener('click', () => {
@@ -9,6 +11,8 @@ button.addEventListener('click', () => {
   if (input.value.trim() !== '') {
     // Create a li element that will hold each entry's chapter title and an associated delete button
     const li = document.createElement('li');
+    const chapterText = document.createTextNode(input.value);
+    li.appendChild(chapterText);
 
     // Create a delete button
     const deleteButton = document.createElement('button');
@@ -20,9 +24,6 @@ button.addEventListener('click', () => {
       // Remove the li element when clicked
       li.remove();
     });
-
-    // Populate the li element variable's textContent or innerHTML with the input value
-    li.textContent = input.value;
 
     // Append the delete button to the li element variable
     li.appendChild(deleteButton);
@@ -40,3 +41,6 @@ button.addEventListener('click', () => {
   // Send the focus to the input element
   input.focus();
 });
+
+
+
