@@ -16,7 +16,8 @@
         gap: 15px;
     }
 
-    .gallery {
+    #temple-container {
+        display: grid;
         grid-template-columns: repeat(3, 1fr);
     }
     .nav ul li a:hover {

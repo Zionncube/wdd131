@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filtered Temples</title>
+    <meta name="description" content="Album for the temples of The Church of Jesus Christ.">
+    <meta name="author" content="Happiness">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/temples-large.css">
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+</head>
+
+<body>
+    <header>
+        <h1>Temple Album</h1>
+        <nav>
+            <button id="menu-button">☰</button>
+            <ul id="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="temples.html">All Temples</a></li>
+                <li><a href="filtered-temples.html" class="active">Filtered Temples</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Filtered Temples</h2>
+        
+        <section class="filter-buttons">
+            <button data-filter="all">All</button>
+            <button data-filter="old">Old (pre-1900)</button>
+            <button data-filter="new">New (post-2000)</button>
+            <button data-filter="large">Large (&gt;90,000 sq ft)</button>
+            <button data-filter="small">Small (&lt;10,000 sq ft)</button>
+        </section>
+        
+        <section id="temple-container" class="grid"></section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> | Happiness Nonkululeko Ncube | South Africa</p>
+        <p>Last modified: <span id="last-modified"></span></p>
+    </footer>
+    <script defer src="scripts/filtered-temples.js"></script>
+</body>
+</html>
